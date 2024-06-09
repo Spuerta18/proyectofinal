@@ -41,59 +41,71 @@
 </style>
 </head>
 
-
-<header class="bg-white">
-  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
-      <div class="flex items-center">
-        <!-- Botón Home -->
-        <a class="text-teal-600" href="./index.html">
-          <button class="px-3 py-2 rounded-md text-sm font-medium text-white bg-teal-600 hover:bg-teal-700">
-           BIO-COMMERCE
-          </button>
-        </a>
-        
-        <div class="ml-8 md:flex md:items-center md:gap-12">
-          <nav aria-label="Global" class="hidden md:block">
-            <ul class="flex items-center gap-6 text-sm">
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexSobrenosotros.html">Sobre nosotros</a>
-              </li>
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexCotizaciones.html">Cotizaciones</a>
-              </li>
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="servicios.html">Servicios</a>
-              </li>
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="./projects.html">Proyectos</a>
-              </li>
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="./index.blog.html">Blog</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      
-      <div class="flex items-center gap-4 ml-auto">
-        <div class="sm:flex sm:gap-4">
-          <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" href="./indexLoguin.html">Login</a>
-          <div class="hidden sm:flex">
-            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="registro.html">Registrarse</a>
-          </div>
-        </div>
-        
-        <a href="./indexCarrito.html" class="bg-teal-600 text-white px-4 py-2 rounded-md flex items-center space-x-2">
-          <i class="fas fa-shopping-cart"></i>
-          <div class="bg-gray-500 text-white w-5 h-5 rounded-full flex items-center justify-center">0</div>
-        </a>
-      </div>
-    </div>
+<body>
+  <div class="floating-buttons z-50">
+    <a href="https://wa.me/+573136537228" class="floating-button whatsapp" target="_blank"><i
+        class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/share/DivTgsvgtRr4jJLx/?mibextid=LQQJ4d" class="floating-button facebook"
+      target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/bioestructuras?igsh=MW5zc2Fsem5yczk3NQ==" class="floating-button instagram"
+      target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
-</header>
+</body>
+<header>
+  <header class="bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex-1 md:flex md:items-center md:gap-12">
+          <a class="block text-teal-600" href="./index.html">
+            <span class="sr-only">Home</span>
+            <div>
 
 
+            </div>
+          </a>
+          <div class="md:flex ml-auto :items-center md:gap-12">
+            <nav aria-label="Global" class="hidden md:block">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexSobrenosotros.html"> Sobre nosotros </a>
+                </li>
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexCotizaciones.html"> Cotizaciones </a>
+                </li>
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="servicios.html"> Servicios </a>
+                </li>
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="./projects.html"> Proyectos </a>
+                </li>
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="./index.blog.html"> Blog </a>
+                </li>
+              </ul>
+            </nav>
+          
+            <div class="flex items-center gap-4 ml-auto"> <!-- Aquí se agrega ml-auto para alinear a la derecha -->
+              <div class="sm:flex sm:gap-4">
+                <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" href="./indexLoguin.html">
+                  Login
+                </a>
+          
+                <div class="hidden sm:flex">
+                  <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="registro.html">
+                    Registrarse
+                  </a>
+                </div>
+              </div>
+          
+              <!-- Botón de carrito de compras como hipervínculo -->
+              <a href="./indexCarrito.html" class="bg-teal-600 text-white px-4 py-2 rounded-md flex items-center space-x-2">
+                <i class="fas fa-shopping-cart"></i>
+               
+                <div class="bg-gray-500 text-white w-5 h-5 rounded-full flex items-center justify-center">0</div>
+              </a>
+              <!-- Fin del botón de carrito de compras -->
+          
+            </div>
           </div>
           
 
@@ -117,6 +129,13 @@
 </header>
 
 <body>
+  <script>
+    // Función para mostrar u ocultar el menú al hacer clic en el botón de hamburguesa
+    document.getElementById('hamburger-btn').addEventListener('click', function() {
+      var menu = document.querySelector('nav');
+      menu.classList.toggle('hidden');
+    });
+  </script>
   <section class="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3">
     <img alt=""
       src="https://img.freepik.com/foto-gratis/paneles-solares-techo-celula-solar_335224-1324.jpg?size=626&ext=jpg&ga=GA1.1.1788614524.1717200000&semt=ais_user"
@@ -230,16 +249,8 @@
       </ul>
     </div>
   </section>
-</body>
 
-<footer>
-  <!--
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
--->
-
+  
   <footer class="bg-white">
     <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-md">
@@ -262,70 +273,34 @@
           </div>
         </form>
       </div>
+      <div></div>
+      <div class="max-w-2xl mx-auto">
 
-      <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
-        <div class="mx-auto max-w-sm lg:max-w-none">
-          <p class="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
-            Bio-commerce es una empresa líder en la industria de energía renovable, especializada en la instalación y
-            mantenimiento de sistemas de paneles solares para hogares, negocios y comunidades. Nuestro compromiso es
-            proporcionar soluciones sostenibles y económicas que ayuden a nuestros clientes a reducir su huella de
-            carbono y a ahorrar en sus facturas de energía..
-          </p>
-
-          <div class="mt-6 flex justify-center gap-4 lg:justify-start">
-
-
-
-            <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
-
-
-
-
-
-
-
-              <ul class="mt-6 space-y-1">
+        <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html" class="hover:underline" target="_blank">Biocommerce™</a>. <!--All Rights Reserved.-->
+        </span>
+            <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
                 <li>
-                  <a class="text-gray-700 transition hover:text-gray-700/75" href="./indexSobrenosotros.html"> Sobre
-                    nosotros </a>
+                    <a href="index.soporte.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Soporte</a>
                 </li>
+                <li>
+                    <a href="PQRS.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">PQRS</a>
+                </li>
+                <li>
+                    <a href="indexSobrenosotros.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="registro.html" class="text-sm text-gray-500 hover:underline dark:text-gray-400">Contactanos</a>
+                </li>
+            </ul>
+        </footer>
+    
+        <!--<p class="mt-5">xxx<a class="text-blue-600 hover:underline"
+                href="https://flowbite.com/docs/getting-started/introduction/" target="_blank">Flowbite Documentation</a>.
+        </p>-->
+    </div>
+</body>
 
 
-
-
-
-                <div>
-                  <strong class="font-medium text-gray-900"> Soporte </strong>
-
-                  <ul class="mt-6 space-y-1">
-                    <li>
-                      <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> PQRS </a>
-                    </li>
-
-                    <li>
-                      <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Contacto</a>
-                    </li>
-
-
-                  </ul>
-                </div>
-            </div>
-          </div>
-
-          <div class="mt-16 border-t border-gray-100 pt-8">
-            <p class="text-center text-xs/relaxed text-gray-500">
-              © Company 2022. All rights reserved.
-
-              <br />
-
-              Created with
-              <a href="#" class="text-gray-700 underline transition hover:text-gray-700/75">Laravel</a>
-              and
-              <a href="#" class="text-gray-700 underline transition hover:text-gray-700/75">Laravel Livewire</a>.
-            </p>
-          </div>
-        </div>
-  </footer>
-</footer>
 
 </html>

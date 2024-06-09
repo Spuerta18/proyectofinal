@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
 </head>
-<body>
-    <h1>soporte</h1>
+<header class="bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex-1 md:flex md:items-center md:gap-12">
+          <a class="block text-teal-600" href="#">
+            <span class="sr-only">Home</span>
+            <div>
+
+
+            </div>
+          </a>
+        </div>
+
+        <div class="md:flex md:items-center md:gap-12">
+          <nav aria-label="Global" class="hidden md:block">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexSobrenosotros.html"> Sobre
+                  nosotros </a>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexCotizaciones.html"> Cotizaciones
+                </a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="servicios.html"> Servicios </a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./projects.html"> Proyectos </a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./index.blog.html"> Blog </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <div class="sm:flex sm:gap-4">
+              <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                href="./indexLoguin.html">
+                Login
+
+              </a>
+
+              <div class="hidden sm:flex">
+                <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="registro.html">
+                  Registrarse
+                </a>
+              </div>
+            </div>
+            <div class="block md:hidden">
+                <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+  
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        </a>
+      </div>
+    <!-- Encabezado con logo y navegación 
+    <nav class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">TuEmpresa</a>
+        <ul class="flex">
+            <li class="mr-6"><a href="#" class="hover:text-gray-300">Inicio</a></li>
+            <li class="mr-6"><a href="#" class="hover:text-gray-300">Productos</a></li>
+            <li class="mr-6"><a href="#" class="hover:text-gray-300">Servicios</a></li>
+            <li><a href="#" class="hover:text-gray-300">Contacto</a></li>
+        </ul>
+    </nav> -->
+</header>
+
+<body class="bg-gray-100">
+    
+
+    <main class="container mx-auto py-8">
+        <!-- Contenido principal -->
+        <section class="text-center">
+            <!-- Banner con información principal y llamado a la acción -->
+            <h1 class="text-4xl font-bold mb-4">Venta e Instalación de Paneles Solares</h1>
+            <p class="text-lg mb-6">¡Haz tu hogar más sostenible con nuestra amplia gama de paneles solares!</p>
+            <a href="#" class="btn-primary">Solicitar Presupuesto</a>
+        </section>
+
+        <section class="my-12">
+            <!-- Sección de servicios -->
+            <h2 class="text-2xl font-bold mb-4">Nuestros Servicios</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <li class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Venta de paneles solares</h3>
+                    <p>Amplia variedad de paneles solares de alta calidad.</p>
+                </li>
+                <li class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Instalación profesional</h3>
+                    <p>Instalación segura y eficiente de paneles solares.</p>
+                </li>
+                <li class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Asesoramiento personalizado</h3>
+                    <p>Asesoramiento especializado para tu proyecto de energía solar.</p>
+                </li>
+                <li class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Mantenimiento y soporte</h3>
+                    <p>Servicio de mantenimiento y soporte post-instalación.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="my-12">
+            <!-- Sección de productos -->
+            <h2 class="text-2xl font-bold mb-4">Nuestros Productos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="panel-solar.jpg" alt="Panel Solar" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Panel Solar Residencial</h3>
+                    <p>Descripción del producto y características.</p>
+                    <a href="#" class="btn-secondary mt-4">Más información</a>
+                </div>
+                <!-- Otros productos -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <!-- Pie de página con información de contacto y enlaces adicionales -->
+        <div class="container mx-auto flex justify-between items-center">
+            <p>Contáctanos: contacto@tuempresa.com</p>
+            <ul class="flex">
+                <li class="mr-6"><a href="#" class="hover:text-gray-300">Términos y Condiciones</a></li>
+                <li><a href="#" class="hover:text-gray-300">Política de Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

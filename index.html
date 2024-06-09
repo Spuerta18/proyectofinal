@@ -58,11 +58,17 @@
         <!-- Botón Home -->
         <a class="text-teal-600" href="./index.html">
           <button class="px-3 py-2 rounded-md text-sm font-medium text-white bg-teal-600 hover:bg-teal-700">
-           BIO-COMMERCE
+            BIO-COMMERCE
           </button>
         </a>
         
         <div class="ml-8 md:flex md:items-center md:gap-12">
+          <!-- Barra de búsqueda -->
+          <div class="relative">
+            <input type="text" id="searchInput" class="border border-gray-300 rounded-md px-3 py-1.5 focus:outline-none focus:ring-teal-500 focus:border-teal-500" placeholder="Buscar...">
+            <button onclick="search()" class="absolute inset-y-0 right-0 px-4 py-1.5 bg-teal-600 text-white rounded-md">Buscar</button>
+          </div>
+          
           <nav aria-label="Global" class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
               <li>
@@ -102,14 +108,11 @@
   </div>
 </header>
 
+
+
+
 <body>
-  <script>
-    // Función para mostrar u ocultar el menú al hacer clic en el botón de hamburguesa
-    document.getElementById('hamburger-btn').addEventListener('click', function() {
-      var menu = document.querySelector('nav');
-      menu.classList.toggle('hidden');
-    });
-  </script>
+ 
   <section class="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3">
     <img alt=""
       src="https://img.freepik.com/foto-gratis/paneles-solares-techo-celula-solar_335224-1324.jpg?size=626&ext=jpg&ga=GA1.1.1788614524.1717200000&semt=ais_user"

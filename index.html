@@ -51,6 +51,17 @@
     height: 400px; /* Altura fija */
     object-fit: cover; /* Recorta la imagen para que se ajuste a las dimensiones sin distorsión */
 }
+/* INTENTO DE BOTTON HAMBURGESA*/
+.hidden {
+            display: none;
+        }
+
+        /* Para dispositivos más grandes, muestra el menú */
+        @media (min-width: 768px) {
+            .hidden {
+                display: block;
+            }
+        }
 </style>
 </head>
 
@@ -119,8 +130,25 @@
       </div>
     </div>
   </div>
+</div>
+<!--INTENTO DE BOTTON HAMBURGESA -->
+<div id="mobile-menu" class="hidden md:hidden">
+    <a href="#" class="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-200">Inicio</a>
+    <a href="#" class="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-200">Sobre Nosotros</a>
+    <a href="#" class="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-200">Servicios</a>
+    <a href="#" class="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-200">Contacto</a>
+</div>
+</div>
 </header>
+<script>
+  // JavaScript para manejar el botón hamburguesa
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
 
+  hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+  });
+</script>
 
 
 
@@ -188,7 +216,7 @@
   document.getElementById('next').addEventListener('click', showNextItem);
   document.getElementById('prev').addEventListener('click', showPrevItem);
 
-  // Cambia automáticamente las imágenes cada 5 segundos
+  // Cambia automáticamente las imágenes cada 3 segundos
   setInterval(showNextItem, 3000);
 </script>
 
@@ -332,7 +360,4 @@
         </p>-->
     </div>
 </body>
-
-
-
 </html>

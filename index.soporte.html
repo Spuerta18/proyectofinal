@@ -7,6 +7,39 @@
   <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
 </head>
+<style>
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .floating-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #25D366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+    }
+  
+    .floating-button.facebook {
+      background-color: #3b5998;
+    }
+  
+    .floating-button.instagram {
+      background-color: #E1306C;
+    }
+  </style>
+  </head>
 <header class="bg-white">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
@@ -85,15 +118,23 @@
 </header>
 
 <body class="bg-gray-100">
-    
+    <div class="floating-buttons z-50">
+        <a href="https://wa.me/+573136537228" class="floating-button whatsapp" target="_blank"><i
+            class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/share/DivTgsvgtRr4jJLx/?mibextid=LQQJ4d" class="floating-button facebook"
+          target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/bioestructuras?igsh=MW5zc2Fsem5yczk3NQ==" class="floating-button instagram"
+          target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
 
     <main class="container mx-auto py-8">
         <!-- Contenido principal -->
         <section class="text-center">
             <!-- Banner con información principal y llamado a la acción -->
             <h1 class="text-4xl font-bold mb-4">Venta e Instalación de Paneles Solares</h1>
+            
             <p class="text-lg mb-6">¡Haz tu hogar más sostenible con nuestra amplia gama de paneles solares!</p>
-            <a href="#" class="btn-primary">Solicitar Presupuesto</a>
+            <a href="https://wa.me/+573136537228" class="btn-primary">Solicitar Presupuesto</a>
         </section>
 
         <section class="my-12">
@@ -144,7 +185,7 @@
                     <a href="index.soporte.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Soporte</a>
                 </li>
                 <li>
-                    <a href="projects.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">PQRS</a>
+                    <a href="PQRS.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">PQRS</a>
                 </li>
                 <li>
                     <a href="indexSobrenosotros.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Sobre nosotros</a>

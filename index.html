@@ -45,6 +45,12 @@
         .carousel-item.active {
             display: block;
         }
+
+  .carousel img {
+    width: 100%;
+    height: 400px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen para que se ajuste a las dimensiones sin distorsión */
+}
 </style>
 </head>
 
@@ -121,7 +127,7 @@
 <body>
  <!-- CARRUSEL DE IMAGENES-->
  <div class="relative w-full max-w-2xl mx-auto">
-  <div class="carousel">
+  <div class="carousel">  
       <div class="carousel-item active">
           <img src="https://images.pexels.com/photos/8853502/pexels-photo-8853502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 1" class="w-full rounded-lg">
       </div>
@@ -131,6 +137,27 @@
       <div class="carousel-item">
           <img src="https://images.pexels.com/photos/9799731/pexels-photo-9799731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 3" class="w-full rounded-lg">
       </div>
+      <div class="carousel-item">
+        <img src="https://bioestructuras.com/wp-content/uploads/2023/08/Bioestructuras-paneles-solares-19.png" alt="Imagen 3" class="w-full rounded-lg">
+    </div>
+    <div class="carousel-item">
+      <img src="https://bioestructuras.com/wp-content/uploads/2020/11/IMG_20201020_121502-1.jpg" alt="Imagen 3" class="w-full rounded-lg">
+  </div>
+  <div class="carousel-item">
+    <img src="https://images.pexels.com/photos/8853541/pexels-photo-8853541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 3" class="w-full rounded-lg">
+</div>
+<div class="carousel-item">
+  <img src="https://images.pexels.com/photos/19895880/pexels-photo-19895880/free-photo-of-hombre-en-pie-de-pie-sonriente.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 3" class="w-full rounded-lg">
+</div>
+<div class="carousel-item">
+  <img src="https://images.pexels.com/photos/11645008/pexels-photo-11645008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 3" class="w-full rounded-lg">
+</div>
+<div class="carousel-item">
+  <img src="https://images.pexels.com/photos/6601008/pexels-photo-6601008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 3" class="w-full rounded-lg">
+</div>
+<div class="carousel-item">
+  <img src="https://images.pexels.com/photos/6601008/pexels-photo-6601008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 3" class="w-full rounded-lg">
+</div>
   </div>
 
   <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-l-lg">
@@ -162,33 +189,8 @@
   document.getElementById('prev').addEventListener('click', showPrevItem);
 
   // Cambia automáticamente las imágenes cada 5 segundos
-  setInterval(showNextItem, 5000);
+  setInterval(showNextItem, 3000);
 </script>
-
-  <!--<section class="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3">
-    <img alt=""
-      src="https://img.freepik.com/foto-gratis/paneles-solares-techo-celula-solar_335224-1324.jpg?size=626&ext=jpg&ga=GA1.1.1788614524.1717200000&semt=ais_user"
-      class="h-32 w-full object-cover md:h-full" />
-
-    <div class="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">
-      <p class="text-xl font-semibold uppercase tracking-widest">Paneles solares</p>
-
-      <h2 class="mt-6 font-black uppercase">
-        <span class="text-xl font-black sm:text-1xl lg:text-1xl"> Bio-Commerce </span>
-
-        <span class="mt-2 block text-sm">10 % de descuento en tu primera compra</span>
-      </h2>
-
-      <a class="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
-        href="./indexLoguin.html">
-        Consigue el descuento.
-      </a>
-
-      <p class="mt-8 text-xs font-medium uppercase text-gray-400">
-        Oferta valida hasta el 12/06/2024 *
-      </p>
-    </div>
-  </section>-->
 
   <section>
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">

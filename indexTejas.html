@@ -62,97 +62,61 @@
     }
 </style>
 </head>
-<body>
-
-<!-- Barra de Navegación -->
 <header class="bg-white">
   <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
-      <div class="flex-1 md:flex md:items-center md:gap-12">
-        <a class="block text-teal-600" href="#">
-          <span class="sr-only">Home</span>
-          <div>
-
-
+      <div class="flex items-center">
+        <!-- Botón Home -->
+        <a class="text-teal-600" href="./index.html">
+          <button class="px-3 py-2 rounded-md text-xl font-medium text-green-400 bg-gray-200  hover:bg-teal-200">
+            BIO-COMMERCE
+          </button>
+        </a>
+        <div class="ml-8 md:flex md:items-center md:gap-12">
+          <!-- Barra de búsqueda -->
+        
+          
+          <nav aria-label="Global" class="hidden md:block">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexSobrenosotros.html">Sobre nosotros</a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexCotizaciones.html">Cotizaciones</a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="servicios.html">Servicios</a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./projects.html">Proyectos</a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./index.blog.html">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 ml-auto">
+        <div class="sm:flex sm:gap-4">
+          <a class="rounded-md bg-teal-600 hover:bg-teal-700 px-5 py-2.5 text-sm font-medium text-white shadow" href="./indexLoguin.html">Login</a>
+          <div class="hidden sm:flex">
+            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="registro.html">Registrarse</a>
           </div>
+        </div>
+    
         </a>
       </div>
-      <header class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <div class="flex h-16 items-center justify-between">
-            <div class="flex items-center">
-              <!-- Botón Home -->
-              <a class="text-teal-600" href="./index.html">
-                <button style="white-space: nowrap;" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-teal-600 hover:bg-teal-700">
-                  BIO-COMMERCE
-                </button>
-              </a>
-              <div class="ml-8 md:flex md:items-center md:gap-12">
-                <!-- Barra de búsqueda -->
-                <div class="relative">
-                  <input type="text" id="searchInput" class="border border-gray-300 rounded-md px-3 py-1.5 focus:outline-none focus:ring-teal-500 focus:border-teal-500" placeholder="Buscar...">
-                  <button onclick="search()" class="absolute inset-y-0 right-0 px-4 py-1.5 bg-teal-600 hover:bg-teal-700 text-white rounded-md">Buscar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <div class="md:flex md:items-center md:gap-12">
-        <nav aria-label="Global" class="hidden md:block">
-          <ul class="flex items-center gap-6 text-sm">
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexSobrenosotros.html"> Sobre
-                nosotros </a>
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexCotizaciones.html"> Cotizaciones
-              </a>
-            </li>
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="servicios.html"> Servicios </a>
-            </li>
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="./projects.html"> Proyectos </a>
-            </li>
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="./index.blog.html"> Blog </a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="flex items-center gap-4">
-          <div class="sm:flex sm:gap-4">
-            <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-              href="./indexLoguin.html">
-              Login
-
-            </a>
-
-            <div class="hidden sm:flex">
-              <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="registro.html">
-                Registrarse
-              </a>
-            </div>
-          </div>
-
-          <div class="block md:hidden">
-            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
-
-    </a>
   </div>
+</div>
+
 </header>
+<body>
+
+<!-- Barra de Navegación -->
+
 
 <!-- Contenido de la página -->
 <div class="container mx-auto p-6">

@@ -1,22 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<title>Promoción de Producto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Promoción de Producto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 100px auto;
+      /* Ajuste para centrar el contenedor */
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .product-image {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      /* Asegura que la barra de navegación esté encima de otros elementos */
+      background-color: #fff;
+      /* Fondo blanco para la barra de navegación */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      /* Sombra para la barra de navegación */
+    }
+  </style>
+</head>
 <header class="bg-white">
   <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="flex items-center">
         <!-- Botón Home -->
         <a class="text-teal-600" href="./index.html">
-          <button class="px-3 py-2 rounded-md text-sm font-medium text-white bg-teal-600 hover:bg-teal-700">
-           BIO-COMMERCE
+          <button class="px-3 py-2 rounded-md text-xl font-medium text-teal-500 bg-gray-200  hover:bg-teal-200">
+            BIO-COMMERCE
           </button>
         </a>
-        
         <div class="ml-8 md:flex md:items-center md:gap-12">
+          <!-- Barra de búsqueda -->
+        
+          
           <nav aria-label="Global" class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
               <li>
@@ -41,88 +105,62 @@
       
       <div class="flex items-center gap-4 ml-auto">
         <div class="sm:flex sm:gap-4">
-          <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" href="./indexLoguin.html">Login</a>
+          <a class="rounded-md bg-teal-600 hover:bg-teal-700 px-5 py-2.5 text-sm font-medium text-white shadow" href="./indexLoguin.html">Login</a>
           <div class="hidden sm:flex">
             <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="registro.html">Registrarse</a>
           </div>
         </div>
-        
-        <a href="./indexCarrito.html" class="bg-teal-600 text-white px-4 py-2 rounded-md flex items-center space-x-2">
-          <i class="fas fa-shopping-cart"></i>
-          <div class="bg-gray-500 text-white w-5 h-5 rounded-full flex items-center justify-center">0</div>
+    
         </a>
       </div>
     </div>
   </div>
-</header>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f7f7f7;
-    }
-    
-    .container {
-        text-align: center;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        max-width: 400px;
-        margin: 100px auto; /* Ajuste para centrar el contenedor */
-    }
-    
-    h1 {
-        color: #333;
-    }
-    
-    p {
-        color: #666;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-    
-    .product-image {
-        max-width: 100%;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    
-    .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-    
-    .btn:hover {
-        background-color: #0056b3;
-    }
-
-    .navbar {
-        position: sticky;
-        top: 0;
-        z-index: 1000; /* Asegura que la barra de navegación esté encima de otros elementos */
-        background-color: #fff; /* Fondo blanco para la barra de navegación */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para la barra de navegación */
-    }
-</style>
-</head>
-
-
-<!-- Contenido de la página -->
-<div class="container">
-    <img src="./img/panel solar flexible.png" alt="Producto" class="product-image">
-    <h1>PANELES SOLARES FLEXIBLES  !</h1>
-    <p>
-        ¡Haz que la energía solar se adapte a ti con nuestro panel solar flexible! Ligero, delgado y fácil de instalar en cualquier superficie, este panel te ofrece la libertad de generar electricidad limpia y renovable donde quieras. ¡Dale un impulso verde a tu vida con nuestro panel solar flexible!
-    </p>
-    <a href="/indexCarrito.html" class="btn">Comprar Ahora</a>
 </div>
 
+</header>
+<body>
+
+
+
+  <!-- Contenido de la página -->
+  <div class="container mx-auto p-6">
+    <div class="flex flex-col md:flex-row items-center md:items-start">
+      <img src="./img/panel solar flexible.png" alt="Producto"
+        class="w-full md:w-1/2 lg:w-1/3 h-auto object-cover rounded-lg shadow-md">
+      <div class="md:ml-6 mt-6 md:mt-0">
+        <h1 class="text-2xl font-bold mb-4">¡PANELES FLEXIBLES - ORGÁNICOS!</h1>
+        <p class="mb-4">¡Haz que la energía solar se adapte a ti con nuestro panel solar flexible! Ligero, delgado y fácil de instalar en
+          cualquier superficie, este panel te ofrece la libertad de generar electricidad limpia y renovable donde quieras.
+          ¡Dale un impulso verde a tu vida con nuestro panel solar flexible!</p>
+        <a href="indexCarrito.html" class="bg-teal-600 text-white font-bold py-2 px-4 rounded hover:bg-teal-700">Comprar
+          Ahora</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html"
+        class="hover:underline" target="_blank">Biocommerce™</a>. <!--All Rights Reserved.-->
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+      <li>
+        <a href="https://wa.me/+573136537228"
+          class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Soporte</a>
+      </li>
+      <li>
+        <a href="PQRS.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">PQRS</a>
+      </li>
+      <li>
+        <a href="indexSobrenosotros.html"
+          class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Sobre nosotros</a>
+      </li>
+      <li>
+        <a href="https://wa.me/+573136537228"
+          class="text-sm text-gray-500 hover:underline dark:text-gray-400">Contactanos</a>
+      </li>
+    </ul>
+  </footer>
+
 </body>
+
 </html>

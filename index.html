@@ -51,17 +51,7 @@
     height: 400px; /* Altura fija */
     object-fit: cover; /* Recorta la imagen para que se ajuste a las dimensiones sin distorsión */
 }
-/* INTENTO DE BOTTON HAMBURGESA*/
-/*.hidden {
-            display: none;
-        }
 
-        /* Para dispositivos más grandes, muestra el menú 
-        @media (min-width: 768px) {
-            .hidden {
-                display: block;
-            }
-        }*/
 </style>
 </head>
 
@@ -81,17 +71,13 @@
       <div class="flex items-center">
         <!-- Botón Home -->
         <a class="text-teal-600" href="./index.html">
-          <button class="px-3 py-2 rounded-md text-sm font-medium text-white bg-teal-600 hover:bg-teal-700">
+          <button class="px-3 py-2 rounded-md text-xl font-medium text-teal-500 bg-gray-200  hover:bg-teal-200">
             BIO-COMMERCE
           </button>
         </a>
-        
         <div class="ml-8 md:flex md:items-center md:gap-12">
           <!-- Barra de búsqueda -->
-          <div class="relative">
-            <input type="text" id="searchInput" class="border border-gray-300 rounded-md px-3 py-1.5 focus:outline-none focus:ring-teal-500 focus:border-teal-500" placeholder="Buscar...">
-            <button onclick="search()" class="absolute inset-y-0 right-0 px-4 py-1.5 bg-teal-600 hover:bg-teal-700 text-white rounded-md">Buscar</button>
-          </div>
+        
           
           <nav aria-label="Global" class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
@@ -122,33 +108,15 @@
             <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="registro.html">Registrarse</a>
           </div>
         </div>
-        
-        <a href="./indexCarrito.html" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-md flex items-center space-x-2">
-          <i class="fas fa-shopping-cart"></i>
-          <div class="bg-gray-500 text-white w-5 h-5 rounded-full flex items-center justify-center">0</div>
+    
         </a>
       </div>
     </div>
   </div>
 </div>
-<!--INTENTO DE BOTTON HAMBURGESA 
-<div id="mobile-menu" class="hidden md:hidden">
-    <a href="#" class="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-200">Inicio</a>
-    <a href="#" class="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-200">Sobre Nosotros</a>
-    <a href="#" class="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-200">Servicios</a>
-    <a href="#" class="block py-2 px-4 text-sm text-gray-900 hover:bg-gray-200">Contacto</a>
-</div>
-</div>-->
-</header>
-<script>
-  // JavaScript para manejar el botón hamburguesa
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
 
-  hamburgerBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-  });
-</script>
+</header>
+
 
 
 
@@ -244,7 +212,7 @@
             <p class="mt-2">
               <span class="sr-only"> Precio regular </span>
 
-              <span class="tracking-wider text-gray-900"> 1´000.000 </span>
+              <span class="tracking-wider text-gray-900"> $ 3.000.000 </span>
             </p>
           </div>
         </a>
@@ -263,7 +231,7 @@
             <p class="mt-2">
               <span class="sr-only">Precio regular</span>
 
-              <span class="tracking-wider text-gray-900"> 2´000.000</span>
+              <span class="tracking-wider text-gray-900"> $ 4.000.000</span>
             </p>
           </div>
         </a>
@@ -282,7 +250,7 @@
             <p class="mt-2">
               <span class="sr-only"> Precio regular </span>
 
-              <span class="tracking-wider text-gray-900"> 5´000.000</span>
+              <span class="tracking-wider text-gray-900"> $ 9.000.000</span>
             </p>
           </div>
         </a>
@@ -301,7 +269,7 @@
             <p class="mt-2">
               <span class="sr-only">Precios desde </span>
 
-              <span class="tracking-wider text-gray-900"> 8´000.000</span>
+              <span class="tracking-wider text-gray-900"> $ 110.000.000</span>
             </p>
           </div>
         </a>
@@ -320,7 +288,7 @@
             <p class="mt-2">
               <span class="sr-only">Precios desde </span>
 
-              <span class="tracking-wider text-gray-900"> 900,000</span>
+              <span class="tracking-wider text-gray-900"> $ 3.000,000</span>
             </p>
           </div>
         </a>
@@ -339,7 +307,7 @@
             <p class="mt-2">
               <span class="sr-only">Precios desde </span>
 
-              <span class="tracking-wider text-gray-900"> 30´000.000</span>
+              <span class="tracking-wider text-gray-900"> $ 80.000.000</span>
             </p>
           </div>
         </a>
@@ -358,7 +326,7 @@
             <p class="mt-2">
               <span class="sr-only">Precios desde </span>
 
-              <span class="tracking-wider text-gray-900"> 2´500.000</span>
+              <span class="tracking-wider text-gray-900"> $ 4.500.000</span>
             </p>
           </div>
         </a>
@@ -377,7 +345,7 @@
             <p class="mt-2">
               <span class="sr-only">Precios desde </span>
 
-              <span class="tracking-wider text-gray-900"> 2´000.000</span>
+              <span class="tracking-wider text-gray-900"> $ 3.000.000</span>
             </p>
           </div>
         </a>

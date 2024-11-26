@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  .floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .floating-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .floating-button.facebook {
+    background-color: #3b5998;
+  }
+
+  .floating-button.instagram {
+    background-color: #E1306C;
+  }
+
+  .carousel-item {
+            display: none;
+        }
+        .carousel-item.active {
+            display: block;
+        }
+
+  .carousel img {
+    width: 100%;
+    height: 400px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen para que se ajuste a las dimensiones sin distorsión */
+}
+
+</style>
+</head>
+
+<body>
+  <div class="floating-buttons z-50">
+    <a href="https://wa.me/+573136537228" class="floating-button whatsapp" target="_blank"><i
+        class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/share/DivTgsvgtRr4jJLx/?mibextid=LQQJ4d" class="floating-button facebook"
+      target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/bioestructuras?igsh=MW5zc2Fsem5yczk3NQ==" class="floating-button instagram"
+      target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</body>
+<header class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <div class="flex items-center">
+        <!-- Botón Home -->
+        <a class="text-teal-600" href="./index.html">
+          <button class="px-3 py-2 rounded-md text-xl font-medium text-teal-500 bg-gray-200  hover:bg-teal-200">
+            BIO-COMMERCE
+          </button>
+        </a>
+        <div class="ml-8 md:flex md:items-center md:gap-12">
+          <!-- Barra de búsqueda -->
+        
+          
+          <nav aria-label="Global" class="hidden md:block">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexSobrenosotros.html">Sobre nosotros</a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./indexCotizaciones.html">Cotizaciones</a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="servicios.html">Servicios</a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./projects.html">Proyectos</a>
+              </li>
+              <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="./index.blog.html">Blog</a>
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="./informacion.html">Informacion</a>
+                </li>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-4 ml-auto">
+        <div class="sm:flex sm:gap-4">
+          <a class="rounded-md bg-teal-600 hover:bg-teal-700 px-5 py-2.5 text-sm font-medium text-white shadow" href="./indexLoguin.html">Login</a>
+          <div class="hidden sm:flex">
+            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="registro.html">Registrarse</a>
+          </div>
+        </div>
+    
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</header>
+<main>
+    <main>
+        <iframe title="BD_BIOCOMMERCE" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=41a2f56b-c325-436d-ab91-c95b6a731bfc&autoAuth=true&ctid=dfeb1d64-2c83-434a-bf21-c6696d5322ec" frameborder="0" allowFullScreen="true"></iframe>"
+    </main>
+</main>
+<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html" class="hover:underline" target="_blank">Biocommerce™</a>. <!--All Rights Reserved.-->
+</span>
+    <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+        <li>
+            <a href="https://wa.me/+573136537228" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Soporte</a>
+        </li>
+        <li>
+            <a href="PQRS.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">PQRS</a>
+        </li>
+        <li>
+            <a href="indexSobrenosotros.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Sobre nosotros</a>
+        </li>
+        <li>
+            <a href="https://wa.me/+573136537228" class="text-sm text-gray-500 hover:underline dark:text-gray-400">Contactanos</a>
+        </li>
+    </ul>
+   
+</footer>
+
+<!--<p class="mt-5">xxx<a class="text-blue-600 hover:underline"
+        href="https://flowbite.com/docs/getting-started/introduction/" target="_blank">Flowbite Documentation</a>.
+</p>-->
+</div>
+</body>
+</html>

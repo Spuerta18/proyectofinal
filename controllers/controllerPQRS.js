@@ -1,4 +1,4 @@
-import { pqrs } from "../models/ModelPQRS.js";
+import { pqrs } from "../models/modelPQRS.js";
 
 function registrarPQRS() {
 

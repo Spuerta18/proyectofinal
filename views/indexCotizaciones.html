@@ -60,60 +60,43 @@
 <body class="bg-gray-100 p-8">
   <div class="max-w-md mx-auto bg-white p-8 rounded-md shadow-md">
     <h1 class="text-2xl font-bold mb-4">Cotiza tu Sistema Solar</h1>
-    <form>
+    <form id="cotizacion-form">
+      <!-- Campos del formulario -->
       <div class="mb-4">
         <label for="nombre" class="block text-gray-700 font-bold mb-2">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Nombre" required>
+        <input type="text" id="nombre" name="nombre" class="w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Nombre" required>
       </div>
       <div class="mb-4">
         <label for="apellido" class="block text-gray-700 font-bold mb-2">Apellido:</label>
-        <input type="text" id="apellido" name="apellido"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Apellido" required>
+        <input type="text" id="apellido" name="apellido" class="w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Apellido" required>
       </div>
       <div class="mb-4">
         <label for="correo" class="block text-gray-700 font-bold mb-2">Correo:</label>
-        <input type="email" id="correo" name="correo"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Correo electrónico" required>
+        <input type="email" id="correo" name="correo" class="w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Correo electrónico" required>
       </div>
       <div class="mb-4">
         <label for="telefono" class="block text-gray-700 font-bold mb-2">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Teléfono" required>
+        <input type="tel" id="telefono" name="telefono" class="w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Teléfono" required>
       </div>
       <div class="mb-4">
         <label for="direccion" class="block text-gray-700 font-bold mb-2">Dirección:</label>
-        <input type="text" id="direccion" name="direccion"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Dirección" required>
+        <input type="text" id="direccion" name="direccion" class="w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Dirección" required>
       </div>
       <div class="mb-4">
         <label for="consumo" class="block text-gray-700 font-bold mb-2">Consumo mensual de kW:</label>
-        <input type="number" id="consumo" name="consumo"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Consumo mensual" required>
+        <input type="number" id="consumo" name="consumo" class="w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Consumo mensual" required>
       </div>
       <div class="mb-4">
         <label for="costo_kw" class="block text-gray-700 font-bold mb-2">Costo por kW:</label>
-        <input type="number" id="costo_kw" name="costo_kw"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Costo por kW" required>
+        <input type="number" id="costo_kw" name="costo_kw" class="w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Costo por kW" required>
       </div>
       <div class="mb-4">
-        <label for="area_disponible" class="block text-gray-700 font-bold mb-2">Área disponible para paneles (metros
-          cuadrados):</label>
-        <input type="number" id="area_disponible" name="area_disponible"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-          placeholder="Área disponible" required>
+        <label for="area_disponible" class="block text-gray-700 font-bold mb-2">Área disponible para paneles (m²):</label>
+        <input type="number" id="area_disponible" name="area_disponible" class="w-full px-3 py-2 border border-gray-300 rounded-md" placeholder="Área disponible" required>
       </div>
       <div class="mb-4">
         <label for="tipo_techo" class="block text-gray-700 font-bold mb-2">Tipo de techo disponible:</label>
-        <select id="tipo_techo" name="tipo_techo"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+        <select id="tipo_techo" name="tipo_techo" class="w-full px-3 py-2 border border-gray-300 rounded-md" required>
           <option value="">Seleccionar tipo de techo</option>
           <option value="Plano">Teja de barro</option>
           <option value="Inclinado">Teja de lámina</option>
@@ -123,39 +106,11 @@
         </select>
       </div>
       <div class="mt-6">
-        <a href="indexConfirmarcotizacion.html" class="block w-full">
-            <button type="button" class="w-full bg-teal-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:bg-teal-600">Enviar cotización</button>
-        </a>
-    </div>    
+        <button type="button" id="submit-btn" class="w-full bg-teal-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:bg-teal-600">Enviar cotización</button>
+      </div>
     </form>
   </div>
   <br>
+  <script src="../controllers/controllerCotizacion.js"></script>
 </body>
-
-<!--PAULINA NO VAYA A BORRAR EL FOOTER QUE YA ME LE METI A LA PAGE LOVE U BABY-->
-<div class="max-w-2xl mx-auto">
-
-  <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="index.html"
-        class="hover:underline" target="_blank">Biocommerce™</a>.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
-      <li>
-        <a href="https://wa.me/+573136537228"
-          class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Soporte</a>
-      </li>
-      <li>
-        <a href="PQRS.html" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">PQRS</a>
-      </li>
-      <li>
-        <a href="indexSobrenosotros.html"
-          class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Sobre nosotros</a>
-      </li>
-      <li>
-        <a href="https://wa.me/+573136537228"
-          class="text-sm text-gray-500 hover:underline dark:text-gray-400">Contactanos</a>
-      </li>
-    </ul>
-  </footer>
-
 </html>
